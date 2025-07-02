@@ -47,7 +47,7 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="flex gap-3 navbar-end w-full justify-end">
-          <button className="btn btn-ghost rounded-full">Sign In</button>
+          <button className="btn btn-ghost rounded-full ">Sign In</button>
           <button className="btn btn-primary rounded-2xl btn-outline">
             Get Started
           </button>
