@@ -10,7 +10,7 @@ import { MoveRight } from "lucide-react";
 
 const HowItWorks = () => {
   return (
-    <section className="w-full py-24 px-4 sm:px-6 lg:px-16  mx-auto">
+    <section className="w-full py-24 px-4 bg-primary/10 sm:px-6 lg:px-16  mx-auto">
       <SectionHeading
         badge="How It Works"
         title="How salesLess helps your business grow"

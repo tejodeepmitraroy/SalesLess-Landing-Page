@@ -10,7 +10,7 @@ export const Card = ({
 }) => {
   return (
     <div
-      className={`${className} card w-full h-full  border-8 rounded-2xl border-base-300`}
+      className={`${className} card w-full h-full bg-base-100  border-8 rounded-2xl border-base-300`}
     >
       {children}
     </div>
@@ -44,7 +44,7 @@ export const CardDescription = ({
   className?: string;
   children?: React.ReactNode;
 }) => {
-  return <p className={`${className} card-description`}>{children}</p>;
+  return <p className={`${className} text-sm card-description`}>{children}</p>;
 };
 
 export const CardImage = ({

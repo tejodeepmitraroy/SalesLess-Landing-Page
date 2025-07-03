@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
+import CallToActionBanner from "@/pages/HomePage/CallToActionBanner";
 import FeaturesSection from "@/pages/HomePage/FeaturesSection";
 import HeroSection from "@/pages/HomePage/HeroSection";
 import HowItWorks from "@/pages/HomePage/HowItWorks";
@@ -13,6 +14,7 @@ export default function Home() {
       <FeaturesSection />
       <HowItWorks />
       <PaymentSection />
+      <CallToActionBanner />
       <Footer />
     </main>
   );
