@@ -1,0 +1,41 @@
+#!/bin/sh
+cd "$(git rev-parse --show-toplevel)"
+
+# Check tsconfig standards
+npm run check-types || {
+    echo '😂🤮❌ Failed Type check 😂🤮❌'
+    echo 'Are you seriously trying to write that? Make the changes required above.'
+    exit 1
+}
+
+npx lint-staged -p false
+
+# Check Prettier standards
+npm run prettier || {
+    echo '😂🤮 Its Raw - Your styling looks disgusting 😂🤮'
+    echo 'Prettier check Failed. Run npm run format, add changes and try commit again.'
+    exit 1
+}
+
+# Check ESLint standards
+npm run lint || {
+    echo '😂🤮❌ Get that weak code out of here! 😂🤮❌'
+    echo 'ESLint Check Failed. Make the required changes listed above, add changes and try commit again.'
+    exit 1
+}
+ 
+# #If every thing Passes.... try to run a build
+    echo '😂... Alright... Code looks good to me.. Trying to build now. 😂'
+
+
+npm run build || {
+    echo '❌⚒️💡 Better call to your Senior... Because your build failed ❌⚒️💡
+    Next build Failed: View the erros above to see why.'
+    false
+}
+
+echo '😂... Alright... Code looks good to me.. Lets Commit it. 😂'
+
+
+#If it build we can commit
+    echo '✅✅✅ You win this time... I am commiting this now ✅✅✅'

@@ -1,23 +1,23 @@
 import React from "react";
 
 const SectionHeading = ({
-  badge,
-  title,
-  description,
+	badge,
+	title,
+	description,
 }: {
-  badge: string;
-  title: string;
-  description: string;
+	badge: string;
+	title: string;
+	description: string;
 }) => {
-  return (
-    <section className="w-full h-fit flex mb-16 flex-col items-center justify-center">
-      <div className="badge text-primary">{badge}</div>
-      <section className=" w-full max-w-5xl mt-3 mx-auto text-center flex flex-col">
-        <h2 className="text-5xl font-bold leading-14">{title}</h2>
-        <p className="text-lg font-medium leading-relaxed">{description}</p>
-      </section>
-    </section>
-  );
+	return (
+		<section className="mb-16 flex h-fit w-full flex-col items-center justify-center">
+			<div className="badge text-primary">{badge}</div>
+			<section className="mx-auto mt-3 flex w-full max-w-5xl flex-col text-center">
+				<h2 className="text-5xl leading-14 font-bold">{title}</h2>
+				<p className="text-lg leading-relaxed font-medium">{description}</p>
+			</section>
+		</section>
+	);
 };
 
 export default SectionHeading;
