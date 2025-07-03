@@ -1,4 +1,5 @@
 import { Card, CardDescription, CardTitle } from "@/components/ui/Card";
+import { Zap } from "lucide-react";
 import React from "react";
 
 const CallToActionBanner = () => {
@@ -17,13 +18,17 @@ const CallToActionBanner = () => {
 				/>
 				<section className="flex flex-col items-start justify-between gap-4 p-14">
 					<CardTitle className="text-2xl font-bold">
-						Call To Action Banner
+						Start your Ecommerce Journey
 					</CardTitle>
 
 					<CardDescription className="text-lg font-medium">
 						Unmatched cloud storage with top security, seamless integrations,
 						and flexible plans. Take control today.
 					</CardDescription>
+					<button className="btn btn-primary w-64 rounded-xl py-6">
+						<Zap className="mr-1 fill-amber-400 text-amber-400" />
+						Started 14 days Trials
+					</button>
 				</section>
 				<section className="flex w-full items-center justify-center"></section>
 			</Card>

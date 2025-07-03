@@ -4,7 +4,7 @@ import React from "react";
 
 const FeaturesSection = () => {
 	return (
-		<section className="mx-auto w-full max-w-6xl px-4 py-24 sm:px-6 lg:px-16">
+		<section className="mx-auto w-full max-w-6xl px-4 py-32 sm:px-6 lg:px-16">
 			<SectionHeading
 				badge="Features"
 				title="Powerful Features"

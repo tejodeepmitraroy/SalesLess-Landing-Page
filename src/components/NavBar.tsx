@@ -48,9 +48,7 @@ const NavBar = () => {
 				</div>
 				<div className="navbar-end flex w-full justify-end gap-3">
 					<button className="btn btn-ghost rounded-full">Sign In</button>
-					<button className="btn btn-primary btn-outline rounded-2xl">
-						Get Started
-					</button>
+					<button className="btn btn-primary rounded-2xl">Get Started</button>
 				</div>
 			</nav>
 		</div>

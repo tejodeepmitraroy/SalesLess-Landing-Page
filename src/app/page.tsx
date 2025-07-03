@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 import CallToActionBanner from "@/pages/HomePage/CallToActionBanner";
+import Faq from "@/pages/HomePage/Faq";
 import FeaturesSection from "@/pages/HomePage/FeaturesSection";
 import HeroSection from "@/pages/HomePage/HeroSection";
 import HowItWorks from "@/pages/HomePage/HowItWorks";
@@ -14,6 +15,7 @@ export default function Home() {
 			<FeaturesSection />
 			<HowItWorks />
 			<PaymentSection />
+			<Faq />
 			<CallToActionBanner />
 			<Footer />
 		</main>
