@@ -7,26 +7,33 @@ import { motion } from "motion/react";
 const HeroSection = () => {
 	return (
 		<section className="flex flex-col">
-			<section className="mx-auto flex max-w-2xl flex-col items-center justify-start pt-36 text-center">
+			<section className="mx-auto flex max-w-3xl flex-col items-center justify-start pt-36 text-center">
 				<motion.div
 					initial={{ y: 30, opacity: 0 }}
 					animate={{ y: 0, opacity: 1 }}
 					transition={{ duration: 0.7 }}
-					className="badge badge-lg mb-5 bg-zinc-50 py-5 shadow-lg"
+					className="badge badge-lg mb-5 bg-zinc-50 px-6 py-4 text-sm shadow-lg"
 				>
-					⚡Best Ecommerce CRM{" "}
+					⚡ Best Ecommerce CRM{" "}
 				</motion.div>
-				<motion.section
-					initial={{ y: 30, opacity: 0 }}
-					animate={{ y: 0, opacity: 1 }}
-					transition={{ duration: 0.7 }}
-					className="flex flex-col items-center justify-center gap-3"
-				>
-					<h1 className="text-6xl font-bold">Your secure space in the cloud</h1>
-					<p className="text-lg leading-relaxed font-medium">
-						Transform your sales with AI superpowers
-					</p>
-				</motion.section>
+				<section className="flex flex-col items-center justify-center gap-3">
+					<motion.h1
+						initial={{ y: 30, opacity: 0 }}
+						animate={{ y: 0, opacity: 1 }}
+						transition={{ duration: 0.7 }}
+					>
+						Finally, a CRM That Works Everywhere You Do
+					</motion.h1>
+					<motion.p
+						initial={{ y: 30, opacity: 0 }}
+						animate={{ y: 0, opacity: 1 }}
+						transition={{ duration: 0.7, delay: 0.4 }}
+						className="text-lg leading-relaxed font-medium"
+					>
+						Salesless is a headless CRM for Manage all sales activities of
+						businesses focused on single dashboards.
+					</motion.p>
+				</section>
 
 				<motion.section
 					initial={{ y: 30, opacity: 0 }}
@@ -34,16 +41,25 @@ const HeroSection = () => {
 					transition={{ duration: 0.7, delay: 0.2 }}
 					className="mt-10 flex w-full flex-col items-center justify-center gap-3"
 				>
-					<button className="btn btn-primary w-64 rounded-xl py-6">
+					<input
+						type="text"
+						placeholder="Enter your Email"
+						className="input input-lg w-full max-w-xl"
+					/>
+					<button className="btn btn-primary w-64 rounded-xl py-6 text-white">
+						<Zap className="mr-1 fill-amber-400 text-amber-400" />
+						Join Waiting List
+					</button>
+					{/* <button className="btn btn-primary w-64 rounded-xl py-6">
 						<Zap className="mr-1 fill-amber-400 text-amber-400" />
 						Started 14 days Trials
 					</button>
 					<button className="btn btn-outline w-64 rounded-xl py-6">
 						See Watch Demo
-					</button>
+					</button> */}
 				</motion.section>
 			</section>
-			<section className="mx-auto mt-14 h-fit w-full max-w-7xl">
+			<section className="mx-auto mt-20 h-fit w-full max-w-7xl">
 				<motion.div
 					initial={{ y: 30, opacity: 0 }}
 					animate={{ y: 0, opacity: 1 }}
